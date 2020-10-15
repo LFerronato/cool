@@ -1,0 +1,156 @@
+{
+  "editor.fontSize": 13,
+  "editor.lineHeight": 24,
+  "editor.letterSpacing": 1.2,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Omni",
+  "workbench.editor.labelFormat": "short",
+  // Aplica um sinal visual na esquerda da linha selecionada
+  "editor.renderLineHighlight": "gutter",
+  // Aumenta a fonte do terminal
+  "terminal.integrated.fontSize": 14,
+  "explorer.compactFolders": false,
+  // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+  "editor.rulers": [
+    90,
+    120
+  ],
+  // visualização do path em cima da janela de codigo
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "extensions.ignoreRecommendations": true,
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For TSLint
+    "source.fixAll.tslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": true,
+  // "eslint.workingDirectories": [
+  //   {
+  //     "directory": "./backend",
+  //     "changeProcessCWD": true
+  //   },
+  //   {
+  //     "directory": "./web/client",
+  //     "changeProcessCWD": true
+  //   }
+  // ],
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  //ICONES PERSONALIZADOS
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.files.associations": {
+    "tsconfig.json": "tune",
+    "ormconfig.json": "database",
+    "*.xlsm": "xml"
+  },
+  "material-icon-theme.folders.associations": {
+    "seeds": "tools",
+    "deploy": "serverless",
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "socket": "sublime",
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // "javascript.updateImportsOnFileMove.enabled": "never",
+  // "typescript.updateImportsOnFileMove.enabled": "never",
+  // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  // "javascript.format.enable": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.tsserver.log": "verbose",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "eslint.options": {
+    "experimentalDecorators": true
+  },
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "liveshare.featureSet": "insiders",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.activityBar.visible": true,
+  "files.autoSave": "off",
+  // remote SSH
+  "remote.SSH.remotePlatform": {
+    "157.245.4.66": "linux",
+    "deploy-157": "linux",
+    "deves-157": "linux",
+    "root-157": "linux",
+    "trader-157": "linux"
+  },
+  // enable delimiter when import data
+  "vscode-mysql.enableDelimiter": true,
+  // Load database meta info when connected, If your machine's performance is low, turn it off.
+  "vscode-mysql.loadMetaOnConnect": true,
+  // set max tables show of each database.
+  "vscode-mysql.maxTableCount": 500,
+  "vscode-mysql.resultTheme": "Dark",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.alwaysShowStatus": true,
+}
