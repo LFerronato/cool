@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function f1() {
+      document.getElementById("123").setAttribute("class", "style1");
+    }
+    function f2() {
+      document.getElementById("123").setAttribute("class", "style2");
+    }
+  </script>
+  <style>
+    .style1 {
+      background-color: #333;
+      color: white;
+    }
+    .style2 {
+      background-color: white;
+      color: #333;
+    }
+  </style>
+
+  <body id="123">
+    <h1>The input element: 22 types!!!</h1>
+    <a href="https://www.w3schools.com/tags/tag_input.asp">artigo origem...</a>
+    [daqui pra baixo inicia um 'form']
+    <form
+      onSubmit="alert('FORMULÁRIO ENVIADO COM SUCESSO!!!! #sqn');return false"
+    >
+      <br /><br />
+      ------------------------------------ \inputs\ para ''clicar''<br />
+      button:<input
+        type="button"
+        onClick="alert('Hello World!')"
+        value="button value!"
+      />
+      <br /><br />
+
+      checkbox (dark-mode 😎):<input
+        type="checkbox"
+        onClick="this.checked ? f1() : f2()"
+      /><br /><br />
+      color:<input type="color" value="#76b480" /> <br /><br />
+      file:<input type="file" /> <br /><br />
+      <br /><br />
+      radio (1 checked per 'name'):
+      <input type="radio" name="n1" />
+      <input type="radio" name="n1" />
+      <input type="radio" name="n1" /> ||
+      <input type="radio" name="n2" />
+      <input type="radio" name="n2" />
+      <input type="radio" name="n2" />
+      <br /><br />
+
+      range:<input
+        type="range"
+        id="iRange"
+        value="2"
+        min="0"
+        max="10"
+        oninput="display.value=value"
+        onchange="display.value=value"
+      />
+      <input
+        type="text"
+        id="display"
+        value="0"
+        oninput="vol.value=value"
+        onchange="vol.value=value"
+      />
+      <br /><br />
+
+      <br /><br />
+      ------------------------------------ \inputs\ para ''data e hora''<br />
+
+      date:<input type="date" /> <br /><br />
+
+      datetime-local:<input type="datetime-local" /> <br /><br />
+
+      time:<input type="time" /> <br /><br />
+
+      month:<input type="month" /> <br /><br />
+      week:<input type="week" /> <br /><br />
+
+      <br /><br />
+      ------------------------------------ \inputs\ para''formulário''<br />
+      email:<input type="email" /> <br /><br />
+      password:<input type="password" /> <br /><br />
+      tel:<input type="tel" /> aparentemente sem validação<br /><br />
+
+      text:<input type="text" /> <br /><br />
+      search:<input type="search" />só coloca um X no final para limpar mais
+      fácil <br /><br />
+      url:<input type="url" /> <br /><br />
+      number:<input type="number" /> <br /><br />
+
+      <br /><br />
+      ------------------------------------ \inputs\ ''oculto??''<br />
+      hidden:<input
+        type="hidden"
+        onClick="alert('NÃO DA PRA CLICAR ANIMAL, está oculto')"
+      />
+
+      <br /><br />
+      ------------------------------------ \inputs\ para ''controlar form''
+      <br />
+      ('sumit' = enviar dados do formulário para algum lugar...)
+      <br />
+      ------------------------------------
+      <br />
+      reset:<input type="reset" /> 'limpa os campos do form <br /><br />
+      image (faz submit na vdd...):<input
+        type="image"
+        src="https://media.giphy.com/media/5wWf7HapUvpOumiXZRK/200.gif"
+        width="50px"
+        height="50px"
+      /><br /><br />
+      submit:<input type="submit" value="FIM!!!" /> <br /><br />
+    </form>
+    Congratulations😁 and nothing will be done!
+  </body>
+</html>
